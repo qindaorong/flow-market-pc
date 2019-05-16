@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta name="description" content="有趣花最新贷款口子大全，新口子上线，放水口子第一时间知晓，通过大数据分析，为您匹配最合适的贷款产品，做到5分钟申请10分钟到账。">
+		<meta name="keywords" content="小额贷款、网贷社区、贷款超市、贷款口子" />
+		<meta name="author" content="">
+		<link rel="icon" href="../static/images/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon"/>
+
+		<title>我的回复</title>
+
+		<!-- Bootstrap -->
+		<link href="../static/bootstrap3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/bootstrap3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--自定义-->
+		<link rel="stylesheet" type="text/css" href="../static/css/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrapReset.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+
+		<script type="text/javascript" src="../static/js/jquery-1.11.2.min.js"></script>
+	</head>
+
+	<body>
+		<div class="flowsupermarketcontainer">
+			<!--引用公共头部模板-->
+			<!--<div class="" slot="header"></div>-->
+<div class="containerTop">
+				<div class="container ">
+					<!-- Static navbar -->
+					<nav class="navbar navbar-default navbar-default-reset">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			              <span class="sr-only">Toggle navigation</span>
+			              <span class="icon-bar icon-bar-reset"></span>
+			              <span class="icon-bar icon-bar-reset"></span>
+			              <span class="icon-bar icon-bar-reset"></span>
+			            </button>
+								<a class="navbar-brand" href="http://www.edgvip.cn">
+								</a>
+							</div>
+							<div id="navbar" class="navbar-collapse collapse">
+
+								<ul class="nav navbar-nav navbar-right headertabs">
+									<li id="index">
+										<a href="http://www.edgvip.cn">首页</a>
+									</li>
+									<li id="loanlist">
+										<a href="http://www.edgvip.cn/loanList.html">贷款超市</a>
+									</li>
+									<li>
+										<a href="http://www.edgvip.cn/discussionList.html">贷款攻略</a>
+									</li>
+									<li>
+										<a href="downloadApp.html">下载APP</a>
+									</li>
+									<li class="active" onclick="gomyhelp()">
+										<a  href="###">我的</a>
+									</li>
+								</ul>
+							</div>
+							<!--/.nav-collapse -->
+						</div>
+						<!--/.container-fluid -->
+					</nav>
+				</div>
+			</div>
+			<!--内容区-->
+			<div class="content">
+				<div class="container">
+					<div class="row myRecordBox">
+						<div id="navL" class="col-md-3 myRecordBoxuserinfo " style="">
+							<div class="nrow myRecordBoxuserinfo-userinfo useravatars2">
+								<img id="avatar" src="../static/images/avatars2.png" alt="配图" />
+								<input class="avatarimage" type="file" name="avatarfile" id="avatarfile" value="" />
+								<!--<img class="Camera" src="../static/images/Camera.png" >-->
+							</div>
+							<p class="phone nrow"> <span id="nickName"></span><input class="nickName" onblur="setnick()" id="phone" type="text" name="" value="" placeholder="请输入昵称" style="display: none;"/>
+							<img class="edit" onclick="modifynickName()"  src="../static/images/edit.png" alt="配图" >
+							 </p>
+							<ul class="list">
+								<a href="myRecord.html">
+								<li class="">
+									<div class="nrow list-cell">
+										<img src="../static/images/attention.png" />
+										我的关注
+									</div>
+								</li>
+								</a>
+								<a href="myreplay.html">
+								<li class="active">
+									<div class="nrow list-cell">
+										<img src="../static/images/comment.png" />
+										我的回复
+									</div>
+								</li>
+								</a>
+								<a href="help.html">
+								<li class="">
+									<div class="nrow list-cell" style="margin-left: -26px;">
+										<img src="../static/images/help.png" />
+										帮助
+									</div>
+								</li>
+								</a>
+							</ul>
+						</div>
+						<div id="conR" class="col-md-9" style="padding: 0;">
+							<div class="Product-Recommend">
+								<h3 class="title">我的回复</h3>
+								<div class="new_con">
+								<div class="tabbox01">
+									<ul class="getmyreplysBox">
+
+									</ul>
+								</div>
+								
+							</div>
+							</div>
+							<!--分页-->
+								<div id="page" class="page_div"></div>
+						</div>
+						
+					
+					</div>
+				</div>
+			</div>
+
+			
+		<!--引用公共尾部模板-->
+			<!--<div class="" slot="footer"></div>-->
+<div class="footer" style="height: 342px;">
+	<div class="lineborder">
+		<div class="container">
+			<div class="statements-agreements row">
+				<ul class="nrow">
+					<a href="userregistagree.html"><li>注册协议 </li></a>
+					<a href="Communitytreaty.html"><li>社区公约</li></a>
+					<a href="aboutUs.html"><li> 关于我们</li></a>
+					<a href="Disclaimer.html"><li> 免责声明 </li></a>
+					<a href="downloadApp.html"><li> 客户端下载</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+				<div class="container">
+					<div class="link-qrcode row">
+							<div class="col-md-6 nrow">
+								<div class="link-qrcode_box">
+									<h5 class="link-qrcode_box_qrcodeimg_gzh">
+										<!--<img src="/static/images/qrcode.png"/>-->
+									</h5>
+									<h6 class="link-qrcode_box_qrcodedecs">
+										官方公众号
+									</h6>
+								</div>
+								<div class="link-qrcode_box pad40">
+									<h5 class="link-qrcode_box_qrcodeimg">
+										<!--<img src="/static/images/qrcode.png"/>-->
+									</h5>
+									<h6 class="link-qrcode_box_qrcodedecs">
+										下载APP
+									</h6>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="link-qrcode_qqnums">
+									<p class="row">
+										<span class="col-md-6">官方客服QQ：2878594007</span>
+									</p>
+									<p class="row">
+										<span class="col-md-6">商务合作QQ：2878594007</span>
+									</p>
+								</div>
+
+							</div>
+						</div>
+					<div class="container" style="height:50px">
+						<p style="text-align: center;width: 100%;font-size: 16px;font-family: 微软雅黑;color: rgb(255,255,255);">版权所有：北京小娅科技有限公司  &nbsp;&nbsp;&nbsp;&nbsp;  京ICP备18061517号-2</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../static/js/common.js" type="text/javascript" charset="utf-8"></script>
+			<!--弹出层 开始 -->
+		<link type="text/css" rel="stylesheet" href="../static/css/zdialog.css" />
+		<script type="text/javascript" src="../static/js/zdialog.js"></script>
+		<!--弹出层 结束 -->
+		<script src="../static/js/paging.js" type="text/javascript" charset="utf-8"></script><!-- 分页 -->
+		<script src="../static/js/my/myreplay.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

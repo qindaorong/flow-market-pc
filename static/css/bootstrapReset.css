@@ -1,0 +1,58 @@
+html{
+	font-size: 750px;
+	/*font-family: "";*/
+}
+.containerTop{
+	background-color: #337ab7;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11);
+}
+.navbar-default-reset{
+	background: #FFFFFF;
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+}
+.navbar-default .navbar-toggle .icon-bar-reset{
+	    background-color: #5A88FF;
+}
+.navbar-default-reset .navbar-toggle:focus, .navbar-default-reset .navbar-toggle:hover{
+	    background-color: #f0f0f0;
+}
+.navbar-default-reset .navbar-nav>.active>a{
+	
+}
+.navbar-brand{
+	width: 150px;
+    position: relative;
+    background-image: url(../images/logo.png);
+    background-size: 140px 48px;
+    background-repeat: no-repeat;
+    background-position: left 50%;
+    padding-left: 36px;
+    font-size: 20px;
+    letter-spacing: -0.04rem;
+    color: white;
+    min-height: 50px;
+    padding-top: 15px;
+    line-height: 20px;
+}
+.navbar-default-reset .navbar-nav>.active>a{
+	font-family:'微软雅黑';
+	/*font-size: 12px;*/
+	color: #5A88FF;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 25px;
+	font-weight: bold;
+	background: transparent;
+}
+.navbar-default-reset .navbar-nav>li>a {
+color: #666666;
+letter-spacing: 0;
+text-align: center;
+line-height: 25px;
+font-size:18px;
+font-family:'微软雅黑';
+font-weight: bold;
+}
+
