@@ -68,7 +68,7 @@
 							// console.log("二维码地址是"+res.data.detail.qrCode);
 							
 							
-							//推荐产品
+							//同类产品
 							var newlist =res.data.list;
 							var table = document.body.querySelector('.lpLoanproduct-recommend');
 							if(newlist.length==0){
@@ -79,7 +79,7 @@
 									var html = "";
 									html+='<li>';
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
-									html += '<a href="../loan' + newlist[i].lpLoanproductId  + '.html">';
+									html += '<a href="http://www.edgvip.cn/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
 										html+='<div  class="newMouth_list">';
 											html+='<div class="newMouth_list_details nrow">';
 												html+='<img src="'+newlist[i].iconUrl+'" alt="配图" />';

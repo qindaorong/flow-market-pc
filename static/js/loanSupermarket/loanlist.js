@@ -181,7 +181,7 @@
  									html += '<tr>';
  									html += '<td>';
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
-									html += '<a href="loan' + newlist[i].lpLoanproductId  + '.html">';
+									html += '<a href="http://www.edgvip.cn/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
  									html += '<div class="appinfo">';
  									html += '<img src="' + newlist[i].iconUrl + '" alt="配图"  onclick="getproductDetails(' + newlist[i].lpLoanproductId +');" />';
  									html += '<span class="appdetails">' + newlist[i].title + '</span>';
@@ -204,7 +204,7 @@
  									html += '<td class="number">' + newlist[i].apylytimes + '</td>';
  									html += '<td>';
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
-									html += '<a href="loan' + newlist[i].lpLoanproductId  + '.html">';
+									html += '<a href="http://www.edgvip.cn/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
  									html += '<button  class="checkDetailbutn" type="button">查看详情</button>';
                                     html += '</a>';
  									html += '</td>';
