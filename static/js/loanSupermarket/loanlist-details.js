@@ -1,7 +1,11 @@
 		$(document).ready(function () {
 					var lpLoanproductId = window.location.href.split("?")[1]; 
 					console.log(lpLoanproductId);
-					$("#lpLoanproductId").val(lpLoanproductId);
+
+					if(lpLoanproductId != "" && lpLoanproductId == undefined && lpLoanproductId.length > 0){
+						$("#lpLoanproductId").val(lpLoanproductId);
+					}
+
 					// 获取贷款产品详情
 					var params = JSON.stringify({
 						"lpLoanproductId":lpLoanproductId
@@ -47,7 +51,7 @@
 								$("#rateRange2").html("-"+details.rateRange2);
 							}
 							
-							$("#rateUnit").html(details.rateUnit);
+							$("#rateUnit").html(details.rateUnit + "%");
 							
 							
 							$("#fasttime").html(details.fasttime);
@@ -166,7 +170,7 @@
 				async:false,
 		       	success: function(res){			
                if(res.rs == 1) {
-				   $.DialogByZ.Alert({Title: "系统提示", Content: "申请成功",BtnL:"确定",FunL:alerts})
+				   $.DialogByZ.Alert({Title: "系统提示", Content: "请用手机扫码",BtnL:"确定",FunL:alerts})
 			   }else {
 				   $.DialogByZ.Alert({Title: "系统提示", Content: res.info,BtnL:"确定",FunL:alerts})
 			   }
