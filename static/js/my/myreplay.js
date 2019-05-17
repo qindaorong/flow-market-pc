@@ -81,22 +81,23 @@ $(document).ready(function() {
 								for (var i = 0; i < newlist.length; i++) {
 
 									html += '<li>';
-									html += '<div class="row">';
-									html += '<div class="new_con_imgs col-md-3">';
-									html += '<img src="' + newlist[i].imgUrl + '" alt="配图" />';
-									html += '</div>';
-									html += '<div class="new_con_con col-md-9">';
-									html += '<h2 class="title">' + newlist[i].title + '</h2>';
-									html += '<div class="myreplaycontent">';
-									html += '<span class="decs">' + newlist[i].content + ' </span>';
-									html += '</div>';
-                                    //html += '<a href="../Discussion/discuss-details.html?' + newlist[i].id  + '">';
 									html += '<a href="../dd/new' + newlist[i].id  + '.html">';
-									html += "<button data-falg='false' class=\"detailsbtn\" type=\"button\">【详情】</button>";
-                                    html += '</a>';
-									html += '<div class="datetime">' + newlist[i].createTime + '</div>';
-									html += '</div>';
-									html += '</div>';
+									html += 	'<div class="row">';
+									html += 		'<div class="new_con_imgs col-md-3">';
+									html += 			'<img src="' + newlist[i].imgUrl + '" alt="配图" />';
+									html += 		'</div>';
+									html += 	'<div class="new_con_con col-md-9">';
+									html += 		'<h2 class="title">' + newlist[i].title + '</h2>';
+									html += 		'<div class="myreplaycontent">';
+									html += 			'<span class="decs">' + newlist[i].content + ' </span>';
+									html += 		'</div>';
+                                    //html += '<a href="../Discussion/discuss-details.html?' + newlist[i].id  + '">';
+									//html += '<a href="../dd/new' + newlist[i].id  + '.html">';
+									html += 		"<button data-falg='false' class=\"detailsbtn\" type=\"button\">【详情】</button>";
+									html += 		'<div class="datetime">' + newlist[i].createTime + '</div>';
+									html += 		'</div>';
+									html +=		'</div>';
+									html += '</a>';
 									html += '</li>';
 
 								}
