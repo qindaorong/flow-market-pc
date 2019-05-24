@@ -2,9 +2,11 @@
 					var lpLoanproductId = window.location.href.split("?")[1]; 
 					console.log(lpLoanproductId);
 
-					if(lpLoanproductId != "" && lpLoanproductId == undefined && lpLoanproductId.length > 0){
-						$("#lpLoanproductId").val(lpLoanproductId);
+					if(lpLoanproductId == "" || lpLoanproductId == undefined){
+						return;
 					}
+
+					$("#lpLoanproductId").val(lpLoanproductId);
 
 					// 获取贷款产品详情
 					var params = JSON.stringify({
@@ -13,7 +15,7 @@
 					console.log(params);
 					// ajax('POST', 'pc/loan/getproduct', params).then(res => {
 				$.ajax({
-				        url:'http://manage.edgvip.cn:9055/pc/loan/getproduct',
+				        url:'http://www.youquhua.com:9055/pc/loan/getproduct',
 				        type:'POST',
 						xhrFields: {
 										withCredentials: true
@@ -155,7 +157,7 @@
 // 			})
 			// ajax('POST', 'pc/loan/applyloan', params).then(res => {
 		$.ajax({
-		        url:'http://manage.edgvip.cn:9055/pc/loan/applyloan',
+		        url:'http://www.youquhua.com:9055/pc/loan/applyloan',
 		        type:'POST',
 				xhrFields: {
 								withCredentials: true

@@ -10,7 +10,7 @@ function moduleLoad(url) {
 				    });
 				}
 
-var domain = 'http://manage.edgvip.cn:9055/';
+var domain = 'http://www.youquhua.com:9055/';
 				function ajax(method, url, param) {
 				
 					return new Promise(function(resolve, reject) {
