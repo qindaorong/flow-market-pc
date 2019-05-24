@@ -15,7 +15,7 @@
 					console.log(params);
 					// ajax('POST', 'pc/loan/getproduct', params).then(res => {
 				$.ajax({
-				        url:'http://www.youquhua.com:9055/pc/loan/getproduct',
+				        url:'http://www.youquhua.com:8055/pc/loan/getproduct',
 				        type:'POST',
 						xhrFields: {
 										withCredentials: true
@@ -157,7 +157,7 @@
 // 			})
 			// ajax('POST', 'pc/loan/applyloan', params).then(res => {
 		$.ajax({
-		        url:'http://www.youquhua.com:9055/pc/loan/applyloan',
+		        url:'http://www.youquhua.com:8055/pc/loan/applyloan',
 		        type:'POST',
 				xhrFields: {
 								withCredentials: true

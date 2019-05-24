@@ -6,7 +6,7 @@
 // 				var params = '';
 // 				ajax('GET', 'pc/loan/productlist', params).then(res => {
 		$.ajax({
-		        url:'http://www.youquhua.com:9055/pc/loan/productlist',
+		        url:'http://www.youquhua.com:8055/pc/loan/productlist',
 		        type:'GET',
 				xhrFields: {
 								withCredentials: true
@@ -96,7 +96,7 @@
 // 				var params002 = "";
 // 				ajax('GET', 'pc/discuss/newinformations', params002).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:9055/pc/discuss/newinformations',
+	        url:'http://www.youquhua.com:8055/pc/discuss/newinformations',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -142,7 +142,7 @@
 // 				var params003 = "";
 // 				ajax('GET', 'pc/discuss/showdiscussList', params003).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:9055/pc/discuss/showdiscussList',
+	        url:'http://www.youquhua.com:8055/pc/discuss/showdiscussList',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -203,7 +203,7 @@
 // 				var params004 = "";
 // 				ajax('GET', 'pc/loan/newproducts', params004).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:9055/pc/loan/newproducts',
+	        url:'http://www.youquhua.com:8055/pc/loan/newproducts',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -268,7 +268,7 @@
 // 				var params_getinterlink = "";
 // 				ajax('GET', 'pc/loan/getinterlink', params_getinterlink).then(res => {
 		$.ajax({
-	        url:'http://www.youquhua.com:9055/pc/loan/getinterlink',
+	        url:'http://www.youquhua.com:8055/pc/loan/getinterlink',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true

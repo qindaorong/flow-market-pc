@@ -13,7 +13,7 @@
 //  					var params_getclassify = "";
 //  					ajax('GET', 'pc/loan/getclassify', params_getclassify).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:9055/pc/loan/getclassify',
+	        url:'http://www.youquhua.com:8055/pc/loan/getclassify',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -64,7 +64,7 @@
 //  					var params_getquerylabels = "";
 //  					ajax('GET', 'pc/loan/getquerylabels', params_getquerylabels).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:9055/pc/loan/getquerylabels',
+	        url:'http://www.youquhua.com:8055/pc/loan/getquerylabels',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -153,7 +153,7 @@
  					console.log("querylabels" + querylabels);
 //  					ajax('POST', 'pc/loan/getproducts2', params_getproducts2).then(res => {
 		$.ajax({
-	        url:'http://www.youquhua.com:9055/pc/loan/getproducts2',
+	        url:'http://www.youquhua.com:8055/pc/loan/getproducts2',
 	        type:'POST',
 			xhrFields: {
 							withCredentials: true

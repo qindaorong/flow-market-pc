@@ -1,5 +1,5 @@
  $(document).ready(function () {
-        var domain = 'http://www.youquhua.com:9055/';
+        var domain = 'http://www.youquhua.com:8055/';
         var validCode = true;  //是否能发送验证码
 
         //点击获取验证码
