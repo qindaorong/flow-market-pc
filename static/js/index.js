@@ -51,7 +51,7 @@
 										var li = document.createElement('li');
 										titlebox_uls_html += '<li class="col-md-4">';
                                         //titlebox_uls_html += '<a href="loanSupermarket/loanlist-details.html?' + list[j].lpLoanproductId  + '">';
-										titlebox_uls_html += '<a href="http://www.edgvip.cn/dk/loan' + list[j].lpLoanproductId  + '.html">';
+										titlebox_uls_html += '<a href="http://www.youquhua.com/dk/loan' + list[j].lpLoanproductId  + '.html">';
 											titlebox_uls_html += '<div class="boxes">';
 											titlebox_uls_html += '<div class="boxeslist nrow">';
 											titlebox_uls_html += '<img src="' + list[j].iconUrl + '" alt="图标" />';
@@ -118,7 +118,7 @@
 							for (var i = 0; i < newlist.length; i++) {
 								var html = "";
                                 //html += '<a href="Discussion/discuss-details.html?' + newlist[i].id  + '">';
-								html += '<a href="http://www.edgvip.cn/dd/new' + newlist[i].id  + '.html">';
+								html += '<a href="http://www.youquhua.com/dd/new' + newlist[i].id  + '.html">';
 								html += '<li id="'+newlist[i].id+'" ><span class="circle"></span> ' + newlist[i].title + '</li> ';
                                 html += '</a>';
 								$(table).append(html);
@@ -165,7 +165,7 @@
 								var html = "";
 								html += '<li>';
                                 //html += '<a href="Discussion/discuss-details.html?' + newlist[i].id  + '">';
-								html += '<a href="http://www.edgvip.cn/dd/new' + newlist[i].id  + '.html">';
+								html += '<a href="http://www.youquhua.com/dd/new' + newlist[i].id  + '.html">';
 								html += '<div class="row">';
 								html += '<div class="new_con_imgs col-md-3">';
 								html += '<img src=' + newlist[i].imgUrl + ' alt="帖子配图" />';
@@ -225,7 +225,7 @@
 								var html = "";
 								html += '<li>';
                                 //html += '<a href="loanSupermarket/loanlist-details.html?' + newlist[i].lpLoanproductId + '">';
-								html += '<a href="http://www.edgvip.cn/dk/loan' + newlist[i].lpLoanproductId + '.html">';
+								html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId + '.html">';
 								html += '<div class="newMouth_list">';
 								html += '<div class="newMouth_list_details nrow">';
 								html += '<img src="' + newlist[i].iconUrl + '" alt="新口子图片" />';

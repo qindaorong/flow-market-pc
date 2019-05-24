@@ -66,7 +66,7 @@
                     localStorage.setItem('userInfo',JSON.stringify(user));//将当前登录人信息存到localstorage中
                   	//放入cookie
                   	setCookie("userinfo",JSON.stringify(user),1);
-                  window.location.href='http://www.edgvip.cn'; //登录成功跳转到主页
+                  window.location.href='http://www.youquhua.com'; //登录成功跳转到主页
                 }else {
                     alert(res.info);
                 }

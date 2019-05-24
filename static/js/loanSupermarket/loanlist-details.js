@@ -85,7 +85,7 @@
 									var html = "";
 									html+='<li>';
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
-									html += '<a href="http://www.edgvip.cn/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
+									html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
 										html+='<div  class="newMouth_list">';
 											html+='<div class="newMouth_list_details nrow">';
 												html+='<img src="'+newlist[i].iconUrl+'" alt="配图" />';

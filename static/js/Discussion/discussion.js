@@ -83,7 +83,7 @@
 									console.log(newlist);
 									var html = "";
                                     //html += '<a href="../loanSupermarket/loanlist-details.html?' + newlist[i].lpLoanproductId + '">';
-									html += '<a href="http://www.edgvip.cn/dk/loan' + newlist[i].lpLoanproductId + '.html">';
+									html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId + '.html">';
 									html += '<li>';
 									html += '<div  class="newMouth_list">';
 									html += '<div class="newMouth_list_details nrow">';
