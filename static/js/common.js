@@ -10,7 +10,7 @@ function moduleLoad(url) {
 				    });
 				}
 
-var domain = 'http://www.youquhua.com:8055/';
+var domain = 'https://www.youquhua.com/';
 				function ajax(method, url, param) {
 				
 					return new Promise(function(resolve, reject) {

@@ -6,7 +6,7 @@
 // 				var params = '';
 // 				ajax('GET', 'pc/loan/productlist', params).then(res => {
 		$.ajax({
-		        url:'http://www.youquhua.com:8055/pc/loan/productlist',
+		        url:'https://www.youquhua.com/pc/loan/productlist',
 		        type:'GET',
 				xhrFields: {
 								withCredentials: true
@@ -51,7 +51,7 @@
 										var li = document.createElement('li');
 										titlebox_uls_html += '<li class="col-md-4">';
                                         //titlebox_uls_html += '<a href="loanSupermarket/loanlist-details.html?' + list[j].lpLoanproductId  + '">';
-										titlebox_uls_html += '<a href="http://www.youquhua.com/dk/loan' + list[j].lpLoanproductId  + '.html">';
+										titlebox_uls_html += '<a href="https://www.youquhua.com/dk/loan' + list[j].lpLoanproductId  + '.html">';
 											titlebox_uls_html += '<div class="boxes">';
 											titlebox_uls_html += '<div class="boxeslist nrow">';
 											titlebox_uls_html += '<img src="' + list[j].iconUrl + '" alt="图标" />';
@@ -96,7 +96,7 @@
 // 				var params002 = "";
 // 				ajax('GET', 'pc/discuss/newinformations', params002).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/discuss/newinformations',
+	        url:'https://www.youquhua.com/pc/discuss/newinformations',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -118,7 +118,7 @@
 							for (var i = 0; i < newlist.length; i++) {
 								var html = "";
                                 //html += '<a href="Discussion/discuss-details.html?' + newlist[i].id  + '">';
-								html += '<a href="http://www.youquhua.com/dd/new' + newlist[i].id  + '.html">';
+								html += '<a href="https://www.youquhua.com/dd/new' + newlist[i].id  + '.html">';
 								html += '<li id="'+newlist[i].id+'" ><span class="circle"></span> ' + newlist[i].title + '</li> ';
                                 html += '</a>';
 								$(table).append(html);
@@ -142,7 +142,7 @@
 // 				var params003 = "";
 // 				ajax('GET', 'pc/discuss/showdiscussList', params003).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/discuss/showdiscussList',
+	        url:'https://www.youquhua.com/pc/discuss/showdiscussList',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -165,7 +165,7 @@
 								var html = "";
 								html += '<li>';
                                 //html += '<a href="Discussion/discuss-details.html?' + newlist[i].id  + '">';
-								html += '<a href="http://www.youquhua.com/dd/new' + newlist[i].id  + '.html">';
+								html += '<a href="https://www.youquhua.com/dd/new' + newlist[i].id  + '.html">';
 								html += '<div class="row">';
 								html += '<div class="new_con_imgs col-md-3">';
 								html += '<img src=' + newlist[i].imgUrl + ' alt="帖子配图" />';
@@ -173,7 +173,7 @@
 								html += '<div class="new_con_con col-md-9">';
 								html += "<h2 class='title'>" + newlist[i].title + "</h2>";
 								html += '<div class="">';
-								html += '<div class="decs showdiscussList_decs_' + newlist[i].id + '">' + newlist[i].content + ' </div>';
+								html += '<span class="decs showdiscussList_decs_' + newlist[i].id + '">' + newlist[i].content + ' </span>';
 								html += "<button data-falg='false'  class=\"detailsbtn\" type=\"button\">【详情】</button>";
 								html += '</div>';
 								html += '<div class="datetime">' + newlist[i].createTime + '</div>';
@@ -203,7 +203,7 @@
 // 				var params004 = "";
 // 				ajax('GET', 'pc/loan/newproducts', params004).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/loan/newproducts',
+	        url:'https://www.youquhua.com/pc/loan/newproducts',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -225,7 +225,7 @@
 								var html = "";
 								html += '<li>';
                                 //html += '<a href="loanSupermarket/loanlist-details.html?' + newlist[i].lpLoanproductId + '">';
-								html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId + '.html">';
+								html += '<a href="https://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId + '.html">';
 								html += '<div class="newMouth_list">';
 								html += '<div class="newMouth_list_details nrow">';
 								html += '<img src="' + newlist[i].iconUrl + '" alt="新口子图片" />';
@@ -268,7 +268,7 @@
 // 				var params_getinterlink = "";
 // 				ajax('GET', 'pc/loan/getinterlink', params_getinterlink).then(res => {
 		$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/loan/getinterlink',
+	        url:'https://www.youquhua.com/pc/loan/getinterlink',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true

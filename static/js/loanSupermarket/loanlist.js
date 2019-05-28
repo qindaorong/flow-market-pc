@@ -13,7 +13,7 @@
 //  					var params_getclassify = "";
 //  					ajax('GET', 'pc/loan/getclassify', params_getclassify).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/loan/getclassify',
+	        url:'https://www.youquhua.com/pc/loan/getclassify',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -64,7 +64,7 @@
 //  					var params_getquerylabels = "";
 //  					ajax('GET', 'pc/loan/getquerylabels', params_getquerylabels).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/loan/getquerylabels',
+	        url:'https://www.youquhua.com/pc/loan/getquerylabels',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -153,7 +153,7 @@
  					console.log("querylabels" + querylabels);
 //  					ajax('POST', 'pc/loan/getproducts2', params_getproducts2).then(res => {
 		$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/loan/getproducts2',
+	        url:'https://www.youquhua.com/pc/loan/getproducts2',
 	        type:'POST',
 			xhrFields: {
 							withCredentials: true
@@ -181,7 +181,7 @@
  									html += '<tr>';
  									html += '<td>';
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
-									html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
+									html += '<a href="https://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
  									html += '<div class="appinfo">';
  									html += '<img src="' + newlist[i].iconUrl + '" alt="配图"  onclick="getproductDetails(' + newlist[i].lpLoanproductId +');" />';
  									html += '<span class="appdetails">' + newlist[i].title + '</span>';
@@ -204,7 +204,7 @@
  									html += '<td class="number">' + newlist[i].apylytimes + '</td>';
  									html += '<td>';
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
-									html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
+									html += '<a href="https://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
  									html += '<button  class="checkDetailbutn" type="button">查看详情</button>';
                                     html += '</a>';
  									html += '</td>';

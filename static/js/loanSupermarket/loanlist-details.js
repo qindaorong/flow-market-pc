@@ -15,7 +15,7 @@
 					console.log(params);
 					// ajax('POST', 'pc/loan/getproduct', params).then(res => {
 				$.ajax({
-				        url:'http://www.youquhua.com:8055/pc/loan/getproduct',
+				        url:'https://www.youquhua.com/pc/loan/getproduct',
 				        type:'POST',
 						xhrFields: {
 										withCredentials: true
@@ -85,7 +85,7 @@
 									var html = "";
 									html+='<li>';
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
-									html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
+									html += '<a href="https://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
 										html+='<div  class="newMouth_list">';
 											html+='<div class="newMouth_list_details nrow">';
 												html+='<img src="'+newlist[i].iconUrl+'" alt="配图" />';
@@ -157,7 +157,7 @@
 // 			})
 			// ajax('POST', 'pc/loan/applyloan', params).then(res => {
 		$.ajax({
-		        url:'http://www.youquhua.com:8055/pc/loan/applyloan',
+		        url:'https://www.youquhua.com/pc/loan/applyloan',
 		        type:'POST',
 				xhrFields: {
 								withCredentials: true

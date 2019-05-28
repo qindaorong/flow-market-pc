@@ -5,7 +5,7 @@
 // 				var params_categories = "";
 // 				ajax('GET', 'pc/discuss/categories', params_categories).then(res => {
 		$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/discuss/categories',
+	        url:'https://www.youquhua.com/pc/discuss/categories',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -61,7 +61,7 @@
 // 					var params004 = "";
 // 					ajax('GET', 'pc/loan<ul class="nrow">products', params004).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/loan/newproducts',
+	        url:'https://www.youquhua.com/pc/loan/newproducts',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -83,7 +83,7 @@
 									console.log(newlist);
 									var html = "";
                                     //html += '<a href="../loanSupermarket/loanlist-details.html?' + newlist[i].lpLoanproductId + '">';
-									html += '<a href="http://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId + '.html">';
+									html += '<a href="https://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId + '.html">';
 									html += '<li>';
 									html += '<div  class="newMouth_list">';
 									html += '<div class="newMouth_list_details nrow">';
@@ -130,7 +130,7 @@
 // 					var params002 = "";
 // 					ajax('GET', 'pc/discuss/newinformations', params002).then(res => {
 	$.ajax({
-	        url:'http://www.youquhua.com:8055/pc/discuss/newinformations',
+	        url:'https://www.youquhua.com/pc/discuss/newinformations',
 	        type:'GET',
 			xhrFields: {
 							withCredentials: true
@@ -231,7 +231,7 @@
 					// ajax('POST', 'pc/discuss/list', params003).then(res => {
 						console.log(params003);
 			$.ajax({
-			        url:'http://www.youquhua.com:8055/pc/discuss/list',
+			        url:'https://www.youquhua.com/pc/discuss/list',
 			        type:'POST',
 					xhrFields: {
 									withCredentials: true

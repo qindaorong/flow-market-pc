@@ -312,12 +312,12 @@ a:hover{text-decoration: none;}
 	overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 272px;
+    width: 260px;
 }
 
-.new_lists .new_lists_celllist li:last-child {
+/*.new_lists .new_lists_celllist li:last-child {
 	border-bottom: 0px dashed #F0F0F0;
-}
+}*/
 
 .new_lists .new_lists_celllist li .circle {
 	display: inline-block;
