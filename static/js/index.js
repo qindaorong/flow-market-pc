@@ -221,6 +221,7 @@
 						var table = document.body.querySelector('.newproductsBox');
 						$(table).html("");
 						if (newlist.length > 0) {
+							console.log("首页最新口子列表数据已经获得");
 							for (var i = 0; i < newlist.length; i++) {
 								var html = "";
 								html += '<li>';
@@ -233,12 +234,12 @@
 								html += '<h1 class="appname">' + newlist[i].title + '</h1>';
 								html += '<p class="appdesc">额度范围： <span class="yellowcolor">' + newlist[i].amountRange1 + '-' + newlist[i].amountRange2 +
 									'</span></p>';
-							if( newlist[i].periodRange1==newlist[i].periodRange2){
-								html += '<p class="appdesc">借款期限：<span class="yellowcolor">' + newlist[i].periodRange1 + newlist[i].periodUnit + '内</span></p>';
-							}else{
-								html += '<p class="appdesc">借款期限：<span class="yellowcolor">' + newlist[i].periodRange1 + '-' + newlist[i].periodRange2 +
-									'' + newlist[i].periodUnit + '</span></p>';
-							}	
+								if( newlist[i].periodRange1==newlist[i].periodRange2){
+									html += '<p class="appdesc">借款期限：<span class="yellowcolor">' + newlist[i].periodRange1 + newlist[i].periodUnit + '内</span></p>';
+								}else{
+									html += '<p class="appdesc">借款期限：<span class="yellowcolor">' + newlist[i].periodRange1 + '-' + newlist[i].periodRange2 +
+										'' + newlist[i].periodUnit + '</span></p>';
+								}
 								
 								html += '</div>';
 								html += '</div>';
@@ -249,8 +250,9 @@
 								html += '</li>';
 								$(table).append(html);
 							}
-
+							console.log("首页最新口子列表数据-数据拼装完毕");
 						} else {
+							console.log("首页最新口子列表数据-不展示");
 							$(table).css("display","none");
 						}
 
@@ -292,7 +294,7 @@
 							}
 
 						} else {
-							$(table).html("暂无数据");
+							//$(table).html("暂无数据");
 						}
 
 					} else {

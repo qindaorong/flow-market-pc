@@ -46,14 +46,14 @@
 							$("#amountRange1").html(details.amountRange1);
 							$("#amountRange2").html(details.amountRange2);
 							if(details.rateRange1==details.rateRange2){
-								$("#rateRange1").html(details.rateRange1);
+								$("#rateRange1").html(details.rateRange1+"%" );
 								$("#rateRange2").css("display","none");
 							}else{
 								$("#rateRange1").html(details.rateRange1);
-								$("#rateRange2").html("-"+details.rateRange2);
+								$("#rateRange2").html("-"+details.rateRange2+"%" );
 							}
 							
-							$("#rateUnit").html(details.rateUnit + "%");
+							$("#rateUnit").html(details.rateUnit);
 							
 							
 							$("#fasttime").html(details.fasttime);

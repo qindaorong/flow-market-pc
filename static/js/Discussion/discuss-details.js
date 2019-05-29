@@ -3,7 +3,14 @@
 			
 			$(document).ready(function() {
                 var discussdetailID = window.location.href.split("?")[1];
-                $("#discussdetailID").val(discussdetailID);
+
+				var hiddenId = $("#discussdetailID").val();
+                if( hiddenId != null && hiddenId != '' && hiddenId  != undefined){
+
+				}else{
+					$("#discussdetailID").val(discussdetailID);
+				}
+
 
 				//处理是否可以评论帖子
 				$("#noLoginTip").hide();
@@ -130,8 +137,9 @@
 					$.DialogByZ.Alert({Title: "系统提示", Content: "请填写您的评论内容",BtnL:"确定",FunL:close})
 					return;
 				}
+
 				var comment_params = JSON.stringify({
-					"id":$("#discussdetailID").val(),  // 帖子id
+					"id": $("#discussdetailID").val(),  // 帖子id
 					"commentId": '', //评论id
 					"replyId":'', //回复Id 
 					"content":content,//

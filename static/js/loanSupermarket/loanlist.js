@@ -183,7 +183,7 @@
                                     //html += '<a href="loanlist-details.html?' + newlist[i].lpLoanproductId  + '">';
 									html += '<a href="https://www.youquhua.com/dk/loan' + newlist[i].lpLoanproductId  + '.html">';
  									html += '<div class="appinfo">';
- 									html += '<img src="' + newlist[i].iconUrl + '" alt="配图"  onclick="getproductDetails(' + newlist[i].lpLoanproductId +');" />';
+ 									html += '<img src="' + newlist[i].iconUrl + '" alt="配图"  />';
  									html += '<span class="appdetails">' + newlist[i].title + '</span>';
  									html += '</div>';
                                     html += '</a>';
