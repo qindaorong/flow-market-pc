@@ -287,10 +287,10 @@
 						var newlist = res.data.list;
 						var table = document.body.querySelector('.getinterlinkbox');
 						if (newlist.length > 0) {
+							var html = "";
 							for (var i = 0; i < newlist.length; i++) {
-								var html = "";
 								html += '<li id="'+newlist[i].code+'"><a target="_blank" href="'+newlist[i].content+'">'+newlist[i].name+'</a></li>';
-								$(table).append(html);
+								$(table).html(html);
 							}
 
 						} else {
